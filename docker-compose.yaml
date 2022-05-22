@@ -2,7 +2,7 @@ version: "3"
 services:
 
   bootnode:
-    image: ankrnetwork/bas-template-bsc:devel
+    image: ss22219/bas-template-bsc:latest
     command:
       - "geth"
       - "--datadir=/datadir"
@@ -18,7 +18,7 @@ services:
     restart: always
 
   validator_1:
-    image: ankrnetwork/bas-template-bsc:devel
+    image: ss22219/bas-template-bsc:latest
     command:
       - "geth"
       - "--datadir=/datadir"
@@ -39,7 +39,7 @@ services:
       - "./datadir/validator_1:/datadir/geth"
     restart: always
   validator_2:
-    image: ankrnetwork/bas-template-bsc:devel
+    image: ss22219/bas-template-bsc:latest
     command:
       - "geth"
       - "--datadir=/datadir"
@@ -60,7 +60,7 @@ services:
       - "./datadir/validator_2:/datadir/geth"
     restart: always
   validator_3:
-    image: ankrnetwork/bas-template-bsc:devel
+    image: ss22219/bas-template-bsc:latest
     command:
       - "geth"
       - "--datadir=/datadir"
@@ -81,7 +81,7 @@ services:
       - "./datadir/validator_3:/datadir/geth"
     restart: always
   validator_4:
-    image: ankrnetwork/bas-template-bsc:devel
+    image: ss22219/bas-template-bsc:latest
     command:
       - "geth"
       - "--datadir=/datadir"
@@ -102,7 +102,7 @@ services:
       - "./datadir/validator_4:/datadir/geth"
     restart: always
   validator_5:
-    image: ankrnetwork/bas-template-bsc:devel
+    image: ss22219/bas-template-bsc:latest
     command:
       - "geth"
       - "--datadir=/datadir"
@@ -124,7 +124,7 @@ services:
     restart: always
 
   rpc:
-    image: ankrnetwork/bas-template-bsc:devel
+    image: ss22219/bas-template-bsc:latest
     command:
       - "geth"
       - "--datadir=/datadir"
@@ -153,7 +153,7 @@ services:
     restart: always
 
   faucet:
-    image: ankrnetwork/bas-template-bsc:devel
+    image: ss22219/bas-template-bsc:latest
     command:
       - "faucet"
       - "--genesis=/datadir/genesis.json"
